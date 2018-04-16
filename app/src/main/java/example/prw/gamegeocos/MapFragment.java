@@ -72,10 +72,6 @@ public class MapFragment extends SupportMapFragment implements LocationEngineLis
     public void onMapReady(MapboxMap mapboxMap) {
         super.onMapReady(mapboxMap);
         this.mapboxMap = mapboxMap;
-        mapboxMap.setCameraPosition(
-                new CameraPosition.Builder()
-                        .target(new LatLng(50.386851, 19.293623))
-                        .build());
         mapboxMap.setMinZoomPreference(15);
         mapboxMap.setMaxZoomPreference(19);
         mapboxMap.setZoom(17);
