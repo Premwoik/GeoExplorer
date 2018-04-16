@@ -76,10 +76,6 @@ public class MapFragment extends SupportMapFragment implements LocationEngineLis
                 new CameraPosition.Builder()
                         .target(new LatLng(50.386851, 19.293623))
                         .build());
-        mapboxMap.addMarker(new MarkerOptions()
-                .setPosition(new LatLng(50.386851, 19.293623))
-                .setSnippet("H St NW with 15th St NW")
-                .setTitle("Jebać disa!"));
         mapboxMap.setMinZoomPreference(15);
         mapboxMap.setMaxZoomPreference(19);
         mapboxMap.setZoom(17);
